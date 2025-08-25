@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guia Profissional de Desenvolvimento Web</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+                <li><a href="fluxo.html">Fluxo</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Quiz de Desenvolvimento Web</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. O que significa HTML?</p>
+                <label><input type="radio" name="q1" value="a"> a) Hypertext Markup Language</label><br>
+                <label><input type="radio" name="q1" value="b"> b) Hightext Machine Language</label><br>
+                <label><input type="radio" name="q1" value="c"> c) Hyperlink and Text Markup Language</label><br>
+            </div>
+            <div class="question">
+                <p>2. Qual é a função do CSS?</p>
+                <label><input type="radio" name="q2" value="a"> a) Estruturar o conteúdo da página</label><br>
+                <label><input type="radio" name="q2" value="b"> b) Estilizar a aparência da página</label><br>
+                <label><input type="radio" name="q2" value="c"> c) Programar a lógica da página</label><br>
+            </div>
+            <div class="question">
+                <p>3. O que é JavaScript?</p>
+                <label><input type="radio" name="q3" value="a"> a) Uma linguagem de marcação</label><br>
+                <label><input type="radio" name="q3" value="b"> b) Uma linguagem de programação para o lado do cliente</label><br>
+                <label><input type="radio" name="q3" value="c"> c) Um framework para desenvolvimento web</label><br>
+            </div>
+            <!-- Adicione mais perguntas conforme necessário -->
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="result" class="hidden">
+            <h3>Resultados do Quiz</h3>
+            <p id="score"></p>
+            <p id="explanation"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Guia Profissional de Desenvolvimento Web</p>
+        <p><a href="../index.html">Início</a> | <a href="boas-praticas.html">Boas Práticas</a> | <a href="tecnologias.html">Tecnologias</a> | <a href="fluxo.html">Fluxo</a> | <a href="quiz.html">Quiz</a></p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

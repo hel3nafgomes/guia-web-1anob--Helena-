@@ -1,0 +1,63 @@
+:root {
+    --cor-primaria: #2563EB; /* azul */
+    --cor-secundaria: #10B981; /* verde */
+    --cor-texto: #111827; /* texto */
+    --cor-fundo-claro: #F3F4F6; /* fundo claro */
+    --cor-borda: #E5E7EB; /* bordas */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px; /* espaço para o header fixo */
+    padding: 2rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}

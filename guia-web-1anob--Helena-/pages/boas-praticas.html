@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Práticas - Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guia Profissional de Desenvolvimento Web</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+                <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                <li><a href="fluxo.html">Fluxo</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Boas Práticas em Desenvolvimento Web</h2>
+            <div class="accordion">
+                <h3>Semântica & Acessibilidade</h3>
+                <div class="content">
+                    <ul>
+                        <li>Utilizar landmarks para estruturação do HTML.</li>
+                        <li>Incluir atributos alt em imagens.</li>
+                        <li>Conectar labels a inputs usando for/id.</li>
+                        <li>Garantir contraste adequado entre texto e fundo.</li>
+                    </ul>
+                    <pre><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code></pre>
+                </div>
+                
+                <h3>Responsividade</h3>
+                <div class="content">
+                    <ul>
+                        <li>Adotar mobile-first na abordagem de design.</li>
+                        <li>Utilizar Flexbox ou Grid para layouts.</li>
+                        <li>Preferir unidades relativas como % e em.</li>
+                    </ul>
+                    <pre><code>display: flex;</code></pre>
+                </div>
+
+                <h3>Organização de CSS</h3>
+                <div class="content">
+                    <ul>
+                        <li>Utilizar BEM ou outra convenção de nomenclatura.</li>
+                        <li>Adicionar comentários explicativos no código.</li>
+                        <li>Definir variáveis CSS para cores e fontes.</li>
+                    </ul>
+                    <pre><code>:root { --cor-primaria: #2563EB; }</code></pre>
+                </div>
+
+                <h3>Performance Leve</h3>
+                <div class="content">
+                    <ul>
+                        <li>Otimizar imagens para web.</li>
+                        <li>Implementar lazy loading para imagens.</li>
+                        <li>Evitar JavaScript desnecessário.</li>
+                    </ul>
+                    <pre><code>&lt;img src="imagem.jpg" loading="lazy"&gt;</code></pre>
+                </div>
+
+                <h3>Versionamento (Git)</h3>
+                <div class="content">
+                    <ul>
+                        <li>Escrever mensagens de commit claras e descritivas.</li>
+                        <li>Utilizar branches para novas funcionalidades.</li>
+                        <li>Fazer commits frequentes para manter o histórico.</li>
+                    </ul>
+                    <pre><code>git commit -m "feat: adicionar nova funcionalidade"</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Checklist Pessoal</h2>
+            <ul id="checklist">
+                <li><input type="checkbox"> Revisar semântica e acessibilidade</li>
+                <li><input type="checkbox"> Testar responsividade em dispositivos</li>
+                <li><input type="checkbox"> Organizar CSS e adicionar comentários</li>
+                <li><input type="checkbox"> Otimizar imagens do projeto</li>
+                <li><input type="checkbox"> Fazer commit das alterações</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Guia Profissional de Desenvolvimento Web</p>
+        <p><a href="../index.html">Home</a> | <a href="tecnologias.html">Tecnologias</a> | <a href="boas_praticas.html">Boas Práticas</a> | <a href="fluxo.html">Fluxo</a> | <a href="quiz.html">Quiz</a></p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
