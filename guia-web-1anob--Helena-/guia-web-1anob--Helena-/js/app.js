@@ -1,1 +1,0 @@
-// Este arquivo contém a lógica JavaScript do site, incluindo a manipulação do DOM, eventos, filtros, modais e a funcionalidade de salvar preferências no localStorage. É modular e organizado para facilitar a manutenção.

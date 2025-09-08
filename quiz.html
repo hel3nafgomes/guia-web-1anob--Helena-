@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Guia Profissional de Desenvolvimento Web</title>
+	<title>Quiz | Guia Profissional</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
 					<li><a href="tecnologias.html">Tecnologias</a></li>
 					<li><a href="boas-praticas.html">Boas Práticas</a></li>
 					<li><a href="fluxo.html">Fluxo</a></li>
-					<li><a href="quiz.html">Quiz</a></li>
+					<li><a href="quiz.html" aria-current="page">Quiz</a></li>
 					<li>
 						<button id="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro" style="background:none;border:none;font-size:1.5em;cursor:pointer;">
 							🌙
@@ -35,35 +35,12 @@
 	</header>
 
 	<main class="container" tabindex="-1">
-		<section style="margin-top:2em;text-align:center;">
-			<h1>Bem-vindo ao Guia Profissional de Desenvolvimento Web</h1>
-			<p style="font-size:1.2em;max-width:600px;margin:0 auto 1.5em auto;">Descubra os fundamentos, boas práticas e tecnologias essenciais para sua carreira em desenvolvimento web.</p>
-			<a href="#cards" class="btn" style="font-size:1.1em;">Começar</a>
-		</section>
-
-		<section id="cards" style="margin-top:3em;">
-			<h2 style="text-align:center;">O que é HTML, CSS e JavaScript?</h2>
-			<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:2em;margin-top:2em;">
-				<article style="background:var(--color-bg);border:1px solid var(--color-border);border-radius:8px;padding:1.5em;box-shadow:0 2px 8px #0001;">
-					<h3>HTML</h3>
-					<p>Linguagem de marcação que estrutura o conteúdo da web. Define títulos, parágrafos, listas, links e imagens.</p>
-					<pre style="background:#E5E7EB;padding:0.7em;border-radius:5px;"><code>&lt;h1&gt;Olá, mundo!&lt;/h1&gt;</code></pre>
-					<p><strong>Quando usar:</strong> Sempre que precisar estruturar páginas web.</p>
-				</article>
-				<article style="background:var(--color-bg);border:1px solid var(--color-border);border-radius:8px;padding:1.5em;box-shadow:0 2px 8px #0001;">
-					<h3>CSS</h3>
-					<p>Folhas de estilo que definem cores, fontes, espaçamento e layout. Torna a web bonita e responsiva.</p>
-					<pre style="background:#E5E7EB;padding:0.7em;border-radius:5px;"><code>h1 { color: #2563EB; }</code></pre>
-					<p><strong>Quando usar:</strong> Para estilizar e adaptar o visual do site.</p>
-				</article>
-				<article style="background:var(--color-bg);border:1px solid var(--color-border);border-radius:8px;padding:1.5em;box-shadow:0 2px 8px #0001;">
-					<h3>JavaScript</h3>
-					<p>Linguagem de programação que adiciona interatividade, validações e lógica dinâmica às páginas web.</p>
-					<pre style="background:#E5E7EB;padding:0.7em;border-radius:5px;"><code>document.querySelector('h1').textContent = 'Olá!';</code></pre>
-					<p><strong>Quando usar:</strong> Para criar interações e funcionalidades dinâmicas.</p>
-				</article>
-			</div>
-		</section>
+		<h1 style="margin-top:2em;text-align:center;">Quiz de Desenvolvimento Web</h1>
+		<form id="quiz-form" aria-label="Quiz de múltipla escolha" style="max-width:700px;margin:2em auto;">
+			<!-- Questões serão inseridas via JS -->
+		</form>
+		<div id="quiz-resultado" style="display:none;max-width:700px;margin:2em auto;text-align:center;"></div>
+		<div id="quiz-melhor" style="max-width:700px;margin:1em auto 0 auto;text-align:center;font-size:1.1em;"></div>
 	</main>
 
 	<footer style="margin-top:3em;padding:2em 0 1em 0;background:var(--color-border);text-align:center;">

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fluxograma do Projeto Web | Guia Profissional</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+	<style>
+		.fluxo-svg { width:100%; max-width:900px; margin:2em auto; display:block; }
+		.etapa:hover, .etapa:focus { filter: brightness(1.1); cursor:pointer; }
+		.tooltip { position:absolute; background:var(--color-bg); color:var(--color-text); border:1px solid var(--color-border); border-radius:8px; padding:1em; box-shadow:0 2px 12px #0002; z-index:2000; min-width:220px; max-width:320px; font-size:1em; display:none; }
+		.linha-tempo { display:flex;overflow-x:auto;gap:1em;justify-content:center;margin:2em 0; }
+		.etapa-timeline { background:var(--color-bg); border:2px solid var(--color-primary); border-radius:2em; padding:0.7em 1.5em; font-family:var(--font-title); font-size:1em; color:var(--color-primary); position:relative; min-width:120px; text-align:center; }
+		.etapa-timeline:not(:last-child)::after { content:''; position:absolute; right:-1em; top:50%; width:2em; height:3px; background:var(--color-primary); transform:translateY(-50%); }
+		@media (max-width:600px) { .fluxo-svg { font-size:0.9em; } .linha-tempo { flex-direction:column; gap:0.5em; } .etapa-timeline:not(:last-child)::after { display:none; } }
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="container" aria-label="Navegação principal">
+			<div style="display:flex;align-items:center;justify-content:space-between;">
+				<a href="index.html" aria-label="Página inicial" style="display:flex;align-items:center;gap:0.5em;">
+					<img src="assets/logo.svg" alt="Logo Guia Web" style="height:2.5em;width:auto;" onerror="this.style.display='none'">
+					<span style="font-family:var(--font-title);font-size:1.3em;font-weight:bold;color:var(--color-primary);">Guia Profissional de Desenvolvimento Web</span>
+				</a>
+				<button class="menu-toggle" aria-label="Abrir menu" aria-controls="main-menu" aria-expanded="false">☰</button>
+				<ul id="main-menu" style="display:flex;gap:1.5em;list-style:none;margin:0;padding:0;align-items:center;">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tecnologias.html">Tecnologias</a></li>
+					<li><a href="boas-praticas.html">Boas Práticas</a></li>
+					<li><a href="fluxo.html" aria-current="page">Fluxo</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li>
+						<button id="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro" style="background:none;border:none;font-size:1.5em;cursor:pointer;">
+							🌙
+						</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container" tabindex="-1">
+		<h1 style="margin-top:2em;text-align:center;">Fluxograma de um Projeto Web</h1>
+		<section aria-label="Fluxograma visual" style="position:relative;">
+			<svg class="fluxo-svg" viewBox="0 0 900 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="fluxograma-title">
+				<title id="fluxograma-title">Fluxograma de um projeto web</title>
+				<!-- Etapas -->
+				<g>
+					<rect class="etapa" tabindex="0" data-etapa="0" x="10" y="60" width="100" height="60" rx="15" fill="#2563EB" />
+					<text x="60" y="95" text-anchor="middle" fill="#fff" font-size="1.1em" font-family="Poppins">Descoberta</text>
+				</g>
+				<g>
+					<rect class="etapa" tabindex="0" data-etapa="1" x="130" y="60" width="100" height="60" rx="15" fill="#10B981" />
+					<text x="180" y="95" text-anchor="middle" fill="#fff" font-size="1.1em" font-family="Poppins">Requisitos</text>
+				</g>
+				<g>
+					<rect class="etapa" tabindex="0" data-etapa="2" x="250" y="60" width="100" height="60" rx="15" fill="#2563EB" />
+					<text x="300" y="95" text-anchor="middle" fill="#fff" font-size="1.1em" font-family="Poppins">Protótipo</text>
+				</g>
+				<g>
+					<rect class="etapa" tabindex="0" data-etapa="3" x="370" y="60" width="100" height="60" rx="15" fill="#10B981" />
+					<text x="420" y="95" text-anchor="middle" fill="#fff" font-size="1.1em" font-family="Poppins">Design</text>
+				</g>
+				<g>
+					<rect class="etapa" tabindex="0" data-etapa="4" x="490" y="60" width="100" height="60" rx="15" fill="#2563EB" />
+					<text x="540" y="95" text-anchor="middle" fill="#fff" font-size="1.1em" font-family="Poppins">Implementação</text>
+				</g>
+				<g>
+					<rect class="etapa" tabindex="0" data-etapa="5" x="610" y="60" width="100" height="60" rx="15" fill="#10B981" />
+					<text x="660" y="95" text-anchor="middle" fill="#fff" font-size="1.1em" font-family="Poppins">Testes</text>
+				</g>
+				<g>
+					<rect class="etapa" tabindex="0" data-etapa="6" x="730" y="60" width="100" height="60" rx="15" fill="#2563EB" />
+					<text x="780" y="95" text-anchor="middle" fill="#fff" font-size="1.1em" font-family="Poppins">Deploy</text>
+				</g>
+				<g>
+					<rect class="etapa" tabindex="0" data-etapa="7" x="850" y="60" width="100" height="60" rx="15" fill="#10B981" />
+					<text x="900" y="95" text-anchor="middle" fill="#fff" font-size="1.1em" font-family="Poppins">Monitoramento</text>
+				</g>
+				<!-- Setas -->
+				<g stroke="#111827" stroke-width="3" marker-end="url(#arrow)">
+					<line x1="110" y1="90" x2="130" y2="90" />
+					<line x1="230" y1="90" x2="250" y2="90" />
+					<line x1="350" y1="90" x2="370" y2="90" />
+					<line x1="470" y1="90" x2="490" y2="90" />
+					<line x1="590" y1="90" x2="610" y2="90" />
+					<line x1="710" y1="90" x2="730" y2="90" />
+					<line x1="830" y1="90" x2="850" y2="90" />
+				</g>
+				<defs>
+					<marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+						<path d="M0,0 L10,5 L0,10 z" fill="#111827" />
+					</marker>
+				</defs>
+			</svg>
+			<div id="fluxo-tooltip" class="tooltip" role="tooltip" aria-hidden="true"></div>
+		</section>
+
+		<section aria-label="Linha do tempo" class="linha-tempo">
+			<div class="etapa-timeline" tabindex="0" data-etapa="0">Descoberta</div>
+			<div class="etapa-timeline" tabindex="0" data-etapa="1">Requisitos</div>
+			<div class="etapa-timeline" tabindex="0" data-etapa="2">Protótipo</div>
+			<div class="etapa-timeline" tabindex="0" data-etapa="3">Design</div>
+			<div class="etapa-timeline" tabindex="0" data-etapa="4">Implementação</div>
+			<div class="etapa-timeline" tabindex="0" data-etapa="5">Testes</div>
+			<div class="etapa-timeline" tabindex="0" data-etapa="6">Deploy</div>
+			<div class="etapa-timeline" tabindex="0" data-etapa="7">Monitoramento</div>
+		</section>
+	</main>
+
+	<footer style="margin-top:3em;padding:2em 0 1em 0;background:var(--color-border);text-align:center;">
+		<nav aria-label="Links do rodapé">
+			<a href="index.html">Home</a> |
+			<a href="tecnologias.html">Tecnologias</a> |
+			<a href="boas-praticas.html">Boas Práticas</a> |
+			<a href="fluxo.html">Fluxo</a> |
+			<a href="quiz.html">Quiz</a>
+		</nav>
+		<p style="margin-top:1em;font-size:0.95em;">&copy; 2025 Guia Profissional de Desenvolvimento Web. Créditos: Helena. Todos os direitos reservados.</p>
+	</footer>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
